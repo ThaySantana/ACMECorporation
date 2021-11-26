@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site ACME Corporation">
+    <meta name="authors" content="Felipe - Leonardo - Thaylla">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styling.css">
+    <title> Contato </title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/ACME-Corp.png">
+</head>
+
+<body>
+    <header>
+        <img src="./img/ACME-Corp.png" alt="Logo ACME" title="ACME Corporation" id="logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="cadastro.html" title="Cadastro">Cadastro</a></li>
+                <li><a href="home.html" title="Home"> Home </a></li>
+                <li><a href="nossa-historia.html" title="Nossa História"> Nossa História </a></li>
+                <li><a href="lojas.html" title="Lojas"> Lojas Físicas </a></li>
+                <li><a href="calçados.html" title="Calçados">Calçados</a></li>
+                <li><a href="artigos-esportivos.html" title="Artigos Esportivos">Artigos Esportivos</a></li>
+                <li><a href="contato.html" title="Contato"> Contato </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contato">
+        <h1> Contato </h1>
+        <p> Não exite em entrar em contato com a nossa equipe.</p>
+    </div>
+
+    <form name="Contato" action="http://hub.fatecrl.edu.br/sobrino/recebe.php" method="post" 
+        target="_blank" autocomplete="on">
+            <fieldset class="campo">
+                <legend> Dados Pessoais </legend>
+
+                <span class="obrigatorio"> * </span><label for="nome"> Nome Completo: </label><br>
+                <input type="text" name="nome" id="nome" size="200" maxlength="70" required
+                placeholder=" Digite aqui "><br>
+
+                <br>
+                <span class="obrigatorio"> * </span><label for="tel"> Telefone: </label><br>
+                <i class="dica"> Escreva seu número de telefone celular </i>
+                <input type="text" name="tel" id="tel" size="20" maxlength="20" required
+                placeholder=" (DDD) Telefone "><br>
+
+                <br>
+                <span class="obrigatorio"> * </span><label for="email"> E-mail: </label><br>
+                <i class="dica"> Escreva seu e-mail utilizando letras minúsculas, caracteres e números </i>
+                <input type="text" name="email" id="email" size="30" maxlength="30" required
+                placeholder=" nome.sobrenome@gmail.com "><br>
+
+                <br>
+                <span class="obrigatorio"> * </span><label for="motivo"> Finalidade da Mensagem: </label><br>
+                <i class="dica"> Dúvidas, agradecimentos, reclamações, etc. </i><br>
+                <input type="text" name="motivo" id="motivo" size="30" maxlength="30" required
+                placeholder=" Digite aqui "><br>
+
+                <br>
+                <span class="obrigatorio"> * </span><label for="assunto"> Assunto: </label><br>
+                <i class="dica"> Referente à finalidade escolhida acima </i>
+                <input type="text" name="assunto" id="assunto" size="20" maxlength="20" required
+                placeholder=" Digite aqui "><br>
+                
+                <br>
+                <span class="obrigatorio"> * </span><label for="mensagem"> Mensagem: </label><br>
+                <textarea id="mensagem" name="mensagem" rows="3" cols="100" required
+                placeholder=" Digite sua mensagem aqui "></textarea>
+
+                <br>
+                <input type="submit" Value="Enviar">
+            </fieldset>
+    </form><br>
+
+    <br>
+    <footer>
+        <figure class="colab">
+            <img width="150" height="70" src="./img/FATEC-RL.png" alt="Logo FATEC RL">
+            <img width="280" height="70" src="./img/CPS-GovSP.png" alt="Logo CPS e Governo">
+        </figure>
+
+        <p> Copyright © 2021 _ Equipe de Desenvolvimento ACME<br> Membros: Felipe Ursini, Leonardo Yamashiro, Thaylla Santana </p>
+    </footer>
+</body>
+</html>
